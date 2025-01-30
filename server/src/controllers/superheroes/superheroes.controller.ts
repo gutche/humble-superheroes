@@ -23,6 +23,7 @@ export class SuperheroesController {
 
   @Get()
   getSuperheroes() {
+    // return superhero list in descending order
     return this.superheroes.sort((a, b) => b.humility - a.humility);
   }
 }
