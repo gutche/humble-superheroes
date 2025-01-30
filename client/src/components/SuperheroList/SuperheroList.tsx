@@ -10,7 +10,7 @@ const SuperheroList = () => {
 
 	useEffect(() => {
 		fetchSuperheroes();
-	}, [superheroes]);
+	}, []);
 
 	const fetchSuperheroes = async () => {
 		try {
@@ -34,7 +34,7 @@ const SuperheroList = () => {
 				</thead>
 				<tbody>
 					{superheroes.map((hero) => (
-						<tr key={hero.name}>
+						<tr key={hero.id}>
 							<td>{hero.name}</td>
 							<td>{hero.superpower}</td>
 							<td>{hero.humility}</td>

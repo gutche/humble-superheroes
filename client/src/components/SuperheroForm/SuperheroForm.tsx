@@ -5,7 +5,11 @@ import "./SuperheroForm.css";
 
 const API_URL = "/api/superheroes";
 
-const SuperheroForm = () => {
+type SuperheroFormProps = {
+	onAdd: () => void;
+};
+
+const SuperheroForm = ({ onAdd }: SuperheroFormProps) => {
 	const [name, setName] = useState<string>("");
 	const [superpower, setSuperpower] = useState<string>("");
 	const [humility, setHumility] = useState<string>("");
@@ -13,7 +17,6 @@ const SuperheroForm = () => {
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		// Validate inputs
 		if (
 			!name ||
 			!superpower ||
@@ -31,7 +34,7 @@ const SuperheroForm = () => {
 				humility: Number(humility),
 			});
 
-			// Reset the form fields
+			onAdd(); // Trigger re-render
 			setName("");
 			setSuperpower("");
 			setHumility("");

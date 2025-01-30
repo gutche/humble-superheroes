@@ -1,6 +1,6 @@
 import { IsInt, IsString, Min, Max } from 'class-validator';
 
-export class Superhero {
+export class SuperheroDto {
   @IsString()
   name: string;
 
