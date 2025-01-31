@@ -5,7 +5,8 @@
 Use GitHub Issues or a project management tool like Trello or Jira to track tasks and progress.
 
 Hold regular stand-up meetings (e.g., daily or weekly) to discuss progress, blockers, and next steps.
-Git Workflow
+
+## Git Workflow
 
 ### Branching
 
