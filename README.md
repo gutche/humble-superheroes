@@ -29,9 +29,9 @@ fix: resolve validation error in SuperheroForm
 
 ### Pull Requests (PRs)
 
-Open a PR for each feature/bug fix.
+-   Open a PR for each feature/bug fix.
 
-Request a code review from your teammate before merging.
+-   Request a code review from your teammate before merging.
 
 ### Code Reviews
 
